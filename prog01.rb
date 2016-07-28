@@ -37,9 +37,11 @@ frame[0][1] = 'Y'
 
 # draw graph
 for x in 0..79 do
-###
-### 分担2
-###
+a = x/79.0
+y = 24-f(a)*24
+if y >= 0 then
+frame[y][x] = "*"
+end
 end
 
 # printout
