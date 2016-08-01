@@ -31,9 +31,12 @@ frame[23][78] = 'X'
 frame[0][1] = 'Y'
 
 # draw func
-###
-### 分担3
-###
+frame[0][20]='y'
+frame[0][21]='='
+
+for i 0..$func.size do
+frame[0][22+i]=$func[i]
+end
 
 # draw graph
 for x in 0..79 do
